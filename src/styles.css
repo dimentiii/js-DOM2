@@ -1,1 +1,97 @@
-"Enter your styles here"
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+.message {
+  min-height: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #fbbf24;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #1f2937;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #374151;
+}
+
+.card-author {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 15px;
+  color: #ffffff;
+  background: #6366f1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

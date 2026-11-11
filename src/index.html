@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотогалерея</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
-    </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+  <main class="page">
+    <h1 class="title">Фотогалерея</h1>
+
+    <p class="message" id="message" role="status"></p>
+
+    <ul class="gallery" id="gallery"></ul>
+
+    <div class="controls">
+      <button type="button" class="btn" id="load-more">Завантажити ще 4 картинки</button>
+      <button type="button" class="btn" id="clear">Очистити галерею</button>
+      <button type="button" class="btn" id="remove-last">Видалити останню картинку</button>
+      <button type="button" class="btn" id="reverse">Перевернути галерею</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
